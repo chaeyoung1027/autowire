@@ -10,6 +10,7 @@
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+<!--    직접주입-->
 <!--    <bean id="t1" class="kr.hs.study.beans.TestBean1">-->
 <!--        <property name="data1">-->
 <!--            <bean class="kr.hs.study.beans.DataBean1"/>-->
@@ -19,7 +20,12 @@
 <!--        </property>-->
 <!--    </bean>-->
 
+<!--    자동주입-->
+    <bean id = "data1" class="kr.hs.study.beans.DataBean1"/>
+    <bean id = "data2" class="kr.hs.study.beans.DataBean2"/>
+    <bean id = "data3" class="kr.hs.study.beans.DataBean3"/>
+
     <bean id = "t1" class = "kr.hs.study.beans.TestBean1" autowire="byName"/>
-    <bean id = "t2" class = "kr.hs.study.beans.TestBean1" autowire="byName"/>
+    <bean id = "t2" class = "kr.hs.study.beans.TestBean2" autowire="byType"/>
 
 </beans>
