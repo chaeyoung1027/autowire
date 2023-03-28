@@ -20,5 +20,6 @@
 <!--    </bean>-->
 
     <bean id = "t1" class = "kr.hs.study.beans.TestBean1" autowire="byName"/>
+    <bean id = "t2" class = "kr.hs.study.beans.TestBean1" autowire="byName"/>
 
 </beans>
